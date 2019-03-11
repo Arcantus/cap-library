@@ -47,7 +47,7 @@ public class CapFeedValidator {
   /**
    * Validates a feed.
    * 
-   * <p>Assumes that the given feed has a non-null {@code originalWireFeed()}.
+   * <p>Assumes that the given feed has a non-null { originalWireFeed()}.
    *
    * @param feed The parsed feed to validate.
    * @return A collection of reasons storing errors, warnings or

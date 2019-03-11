@@ -57,8 +57,8 @@ public class GoogleProfile extends AbstractCapProfile {
   }
 
   /**
-   * @param strictXsdValidation if {@code true}, perform by-the-spec XSD schema validation, which
-   * does not check a number of properties specified elsewhere in the spec. If {@code false}
+   * @param strictXsdValidation if { true}, perform by-the-spec XSD schema validation, which
+   * does not check a number of properties specified elsewhere in the spec. If { false}
    * (the default), attempt to do extra validation to conform to the text of the spec.
    */
   public GoogleProfile(boolean strictXsdValidation) {

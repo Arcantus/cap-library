@@ -104,6 +104,7 @@ public class CapXmlBuilder {
    * Converts the alert to an XML element tree rooted at the return node.
    * @param alert the alert to convert
    * @param document the document used to create the nodes for the element tree
+   * @return Element
    */
   public Element toXmlDocument(AlertOrBuilder alert, Document document) {
     Element alertElement = document.createElement("alert");

@@ -147,7 +147,7 @@ public class CapFeedParser {
   private boolean validate;
 
   /**
-   * Used to validate XML signatures on alerts, if {@code validate} is true.
+   * Used to validate XML signatures on alerts, if { validate} is true.
    * If null, no signature validation is done.
    */
   private XmlSignatureValidator xmlSignatureValidator;
@@ -166,7 +166,7 @@ public class CapFeedParser {
    *
    * @param validate true to validate the feed as it is parsed
    * @param validator Used to validate XML signatures on alerts, if
-   * {@code validate} is true. If null, no signature validation is done.
+   * { validate} is true. If null, no signature validation is done.
    */
   public CapFeedParser(boolean validate, XmlSignatureValidator validator) {
     this.validate = validate;
@@ -192,7 +192,7 @@ public class CapFeedParser {
 
   /**
    * Sets the validator used to validate XML signatures on alerts,
-   if {@code validate} is true. If null, no signature validation is done.
+   if { validate} is true. If null, no signature validation is done.
    * @param validator the new validator
    */
   public void setXmlSignatureValidator(XmlSignatureValidator validator) {
@@ -216,7 +216,7 @@ public class CapFeedParser {
    * @throws FeedException if the XML could not be parsed
    * @throws IllegalArgumentException if XML could be parsed, but is not a
    * feed type supported by Rome
-   * @throws CapFeedException if {@code validate} is true and the feed
+   * @throws CapFeedException if { validate} is true and the feed
    * is not valid
    */
   public SyndFeed parseFeed(Reader reader)
@@ -232,7 +232,7 @@ public class CapFeedParser {
    * @throws FeedException if the feed could not be parsed
    * @throws IllegalArgumentException if XML could be parsed, but is not a
    * feed type supported by Rome
-   * @throws CapFeedException if {@code validate} is true and the feed
+   * @throws CapFeedException if { validate} is true and the feed
    * is not valid
    */
   public SyndFeed parseFeed(InputSource source)
@@ -421,6 +421,7 @@ public class CapFeedParser {
    * @throws CapException if the alert is unparseable as XML
    * @throws com.google.publicalerts.cap.NotCapException if the string is not
    * a CAP alert
+   * @return Alert
    */
   public Alert parseAlert(String entryPayload, Reasons.Builder reasons)
       throws CapException, NotCapException {
@@ -439,6 +440,7 @@ public class CapFeedParser {
    * @throws CapException if the alert is unparseable as XML
    * @throws com.google.publicalerts.cap.NotCapException if the string is not
    * a CAP alert
+   * @return Alert
    */
   public Alert parseAlert(byte[] entryPayload, Reasons.Builder reasons)
       throws CapException, NotCapException {
@@ -479,6 +481,7 @@ public class CapFeedParser {
    *   the link with type "application/cap+xml" is returned.
    *   null is returned otherwise.
    * @param entry the entry to extract a URL from
+   * @throws FeedException An exception when then feed is not accurate.
    * @return the URL, or null if no suitable URL is found
    */
   public String getCapUrl(SyndEntry entry) throws FeedException {

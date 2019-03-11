@@ -39,8 +39,8 @@ public abstract class AbstractCapProfile
   }
 
   /**
-   * @param strictXsdValidation if {@code true}, perform by-the-spec XSD schema validation, which
-   * does not check a number of properties specified elsewhere in the spec. If {@code false}
+   * @param strictXsdValidation if { true}, perform by-the-spec XSD schema validation, which
+   * does not check a number of properties specified elsewhere in the spec. If { false}
    * (the default), attempt to do extra validation to conform to the text of the spec.
    */
   public AbstractCapProfile(boolean strictXsdValidation) {
@@ -56,7 +56,7 @@ public abstract class AbstractCapProfile
   }
 
   /**
-   * Checks if the timezone on the given {@code dateStr} is zero.  If so, adds a new reason with
+   * Checks if the timezone on the given { dateStr} is zero.  If so, adds a new reason with
    * the given xpath and type to the collection of reasons.
    *
    * @param reasons collection to add to if timezone is zero

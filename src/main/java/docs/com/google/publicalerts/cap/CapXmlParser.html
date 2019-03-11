@@ -100,14 +100,14 @@
 </dl>
 <hr>
 <br>
-<pre>public class <span class="strong">CapXmlParser</span>
-extends java.lang.Object</pre>
+public class <span class="strong">CapXmlParser</span>
+extends java.lang.Object
 <div class="block">Parses CAP XML, optionally validating.
  Supports CAP 1.0, 1.1, and 1.2, but all alerts in the same document
  must have the same schema.
 
  Ignores enveloped digital signature.  To validate the signature, use
- <a href="../../../../com/google/publicalerts/cap/XmlSignatureValidator.html" title="class in com.google.publicalerts.cap"><code>XmlSignatureValidator</code></a>.
+ <a href="../../../../com/google/publicalerts/cap/XmlSignatureValidator.html" title="class in com.google.publicalerts.cap">XmlSignatureValidator</a>.
 
  <p>TODO(shakusa) Explicit XEE prevention here like Rome's WireFeedInput?
  <p>TODO(shakusa) Support input from javax.xml.transform.Source ?</div>
@@ -129,13 +129,13 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#CapXmlParser(boolean)">CapXmlParser</a></strong>(boolean&nbsp;validate)</code>
+<td class="colOne"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#CapXmlParser(boolean)">CapXmlParser</a></strong>(boolean&nbsp;validate)
 <div class="block">Creates a new parser.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#CapXmlParser(boolean,%20boolean)">CapXmlParser</a></strong>(boolean&nbsp;validate,
-            boolean&nbsp;strictXsdValidation)</code>
+<td class="colOne"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#CapXmlParser(boolean,%20boolean)">CapXmlParser</a></strong>(boolean&nbsp;validate,
+            boolean&nbsp;strictXsdValidation)
 <div class="block">Creates a new parser.</div>
 </td>
 </tr>
@@ -155,64 +155,64 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(org.xml.sax.InputSource)">parseFrom</a></strong>(org.xml.sax.InputSource&nbsp;is)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(org.xml.sax.InputSource)">parseFrom</a></strong>(org.xml.sax.InputSource&nbsp;is)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(org.xml.sax.InputSource,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(org.xml.sax.InputSource&nbsp;is,
-         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(org.xml.sax.InputSource,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(org.xml.sax.InputSource&nbsp;is,
+         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.io.Reader)">parseFrom</a></strong>(java.io.Reader&nbsp;reader)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.io.Reader)">parseFrom</a></strong>(java.io.Reader&nbsp;reader)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.io.Reader,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(java.io.Reader&nbsp;reader,
-         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.io.Reader,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(java.io.Reader&nbsp;reader,
+         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.lang.String)">parseFrom</a></strong>(java.lang.String&nbsp;str)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.lang.String)">parseFrom</a></strong>(java.lang.String&nbsp;str)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.lang.String,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(java.lang.String&nbsp;str,
-         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)</code>
+<td class="colFirst"><a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFrom(java.lang.String,%20com.google.publicalerts.cap.Reasons.Builder)">parseFrom</a></strong>(java.lang.String&nbsp;str,
+         <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
 <div class="block">Parse the given alert.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFromInternal(com.google.publicalerts.cap.CachedSaxInputSource,%20com.google.publicalerts.cap.Reasons.Builder)">parseFromInternal</a></strong>(<a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html" title="class in com.google.publicalerts.cap">CachedSaxInputSource</a>&nbsp;is,
-                 <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)</code>&nbsp;</td>
+<td class="colFirst">protected <a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#parseFromInternal(com.google.publicalerts.cap.CachedSaxInputSource,%20com.google.publicalerts.cap.Reasons.Builder)">parseFromInternal</a></strong>(<a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html" title="class in com.google.publicalerts.cap">CachedSaxInputSource</a>&nbsp;is,
+                 <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/Circle.html" title="class in com.google.publicalerts.cap">Circle</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toCircle(java.lang.String)">toCircle</a></strong>(java.lang.String&nbsp;str)</code>
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/Circle.html" title="class in com.google.publicalerts.cap">Circle</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toCircle(java.lang.String)">toCircle</a></strong>(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP circle area from a string.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toPolygon(java.lang.String)">toPolygon</a></strong>(java.lang.String&nbsp;str)</code>
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toPolygon(java.lang.String)">toPolygon</a></strong>(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP circle area from a string.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toPolygonNullIfTooFew(java.lang.String)">toPolygonNullIfTooFew</a></strong>(java.lang.String&nbsp;str)</code>
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapXmlParser.html#toPolygonNullIfTooFew(java.lang.String)">toPolygonNullIfTooFew</a></strong>(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP Polygon, returning null if it has fewer than 4 points.</div>
 </td>
 </tr>
@@ -222,7 +222,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -244,12 +244,12 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>CapXmlParser</h4>
-<pre>public&nbsp;CapXmlParser(boolean&nbsp;validate)</pre>
+public&nbsp;CapXmlParser(boolean&nbsp;validate)
 <div class="block">Creates a new parser.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>validate</code> - if true, the <code>parseFrom</code> methods throw a
- <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap"><code>CapException</code></a> if given invalid CAP XML. If false, no
- <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap"><code>CapException</code></a> will be thrown, though a <code>SAXParseException</code>
- or <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap"><code>NotCapException</code></a> could still be thrown if the XML is not
+<dl><dt><span class="strong">Parameters:</span></dt><dd>validate - if true, the parseFrom methods throw a
+ <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> if given invalid CAP XML. If false, no
+ <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> will be thrown, though a SAXParseException
+ or <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> could still be thrown if the XML is not
  valid or not CAP. Instead, if there are errors parsing a field,
  it is left as null.</dd></dl>
 </li>
@@ -260,15 +260,15 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CapXmlParser</h4>
-<pre>public&nbsp;CapXmlParser(boolean&nbsp;validate,
-            boolean&nbsp;strictXsdValidation)</pre>
+public&nbsp;CapXmlParser(boolean&nbsp;validate,
+            boolean&nbsp;strictXsdValidation)
 <div class="block">Creates a new parser.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>validate</code> - if true, the <code>parseFrom</code> methods throw a
- <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap"><code>CapException</code></a> if given invalid CAP XML. If false, no
- <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap"><code>CapException</code></a> will be thrown, though a <code>SAXParseException</code>
- or <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap"><code>NotCapException</code></a> could still be thrown if the XML is not
+<dl><dt><span class="strong">Parameters:</span></dt><dd>validate - if true, the parseFrom methods throw a
+ <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> if given invalid CAP XML. If false, no
+ <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> will be thrown, though a SAXParseException
+ or <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> could still be thrown if the XML is not
  valid or not CAP. Instead, if there are errors parsing a field,
- it is left as null.</dd><dd><code>strictXsdValidation</code> - if true, perform by-the-spec xsd schema
+ it is left as null.</dd><dd>strictXsdValidation - if true, perform by-the-spec xsd schema
  validation, which does not check a number of properties specified
  elsewhere in the spec. If false (the default), attempt to do extra
  validation to conform to the text of the spec.</dd></dl>
@@ -288,9 +288,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toCircle</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Circle.html" title="class in com.google.publicalerts.cap">Circle</a>&nbsp;toCircle(java.lang.String&nbsp;str)</pre>
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Circle.html" title="class in com.google.publicalerts.cap">Circle</a>&nbsp;toCircle(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP circle area from a string.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - A string encoding a circle, as described in the CAP schema.
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - A string encoding a circle, as described in the CAP schema.
  It should be a coordinate pair, followed by a radius.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A CAP Circle with the same center and radius, or null if the
  string failed to parse.</dd></dl>
@@ -302,9 +302,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toPolygon</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a>&nbsp;toPolygon(java.lang.String&nbsp;str)</pre>
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a>&nbsp;toPolygon(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP circle area from a string.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - A string encoding a polygon, as described in the CAP schema.
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - A string encoding a polygon, as described in the CAP schema.
  It should be a space-separated list of points, each of which is a
  comma-separated list of doubles.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A CAP Polygon with the same points, or null if the
@@ -317,12 +317,12 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toPolygonNullIfTooFew</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a>&nbsp;toPolygonNullIfTooFew(java.lang.String&nbsp;str)</pre>
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/Polygon.html" title="class in com.google.publicalerts.cap">Polygon</a>&nbsp;toPolygonNullIfTooFew(java.lang.String&nbsp;str)
 <div class="block">Parses a CAP Polygon, returning null if it has fewer than 4 points.
 
  Like CapXmlParser.toPolygon, but additionally returns null if
  the polygon has too few (less than four) points.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - A string encoding a polygon, as described in the CAP schema.
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - A string encoding a polygon, as described in the CAP schema.
  It should be a space-separated list of points, each of which is a
  comma-separated list of doubles.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A CAP Polygon with the same points, or null if the
@@ -335,18 +335,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.lang.String&nbsp;str)
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.lang.String&nbsp;str)
                       throws <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a>,
                              <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the CAP XML to parse, as a UTF-8 string</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - the CAP XML to parse, as a UTF-8 string</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the parsed alert</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a></code> - if validate is true and there are parse-related
+<dd><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> - if validate is true and there are parse-related
  or validation errors</dd>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFrom(java.lang.String, com.google.publicalerts.cap.Reasons.Builder)">
@@ -355,17 +355,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.lang.String&nbsp;str,
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.lang.String&nbsp;str,
               <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
                       throws <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the CAP XML to parse, as a UTF-8 string</dd><dd><code>reasons</code> - a collection to which to add any non-fatal errors,
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - the CAP XML to parse, as a UTF-8 string</dd><dd>reasons - a collection to which to add any non-fatal errors,
  warnings or recommendations during parsing</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the parsed alert</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFrom(java.io.Reader)">
@@ -374,18 +374,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.io.Reader&nbsp;reader)
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.io.Reader&nbsp;reader)
                       throws <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a>,
                              <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the reader to read the CAP XML to parse</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>reader - the reader to read the CAP XML to parse</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the parsed alert</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a></code> - if validate is true and there are parse-related
+<dd><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> - if validate is true and there are parse-related
  or validation errors</dd>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFrom(java.io.Reader, com.google.publicalerts.cap.Reasons.Builder)">
@@ -394,16 +394,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.io.Reader&nbsp;reader,
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(java.io.Reader&nbsp;reader,
               <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
                       throws <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the reader to read the CAP XML to parse</dd><dd><code>reasons</code> - a collection to which to add any non-fatal errors,
+<dl><dt><span class="strong">Parameters:</span></dt><dd>reader - the reader to read the CAP XML to parse</dd><dd>reasons - a collection to which to add any non-fatal errors,
  warnings or recommendations during parsing</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFrom(org.xml.sax.InputSource)">
@@ -412,18 +412,18 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(org.xml.sax.InputSource&nbsp;is)
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(org.xml.sax.InputSource&nbsp;is)
                       throws <a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a>,
                              <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>is</code> - the input source to read the CAP XML to parse</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>is - the input source to read the CAP XML to parse</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the parsed alert</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a></code> - if validate is true and there are parse-related
+<dd><a href="../../../../com/google/publicalerts/cap/CapException.html" title="class in com.google.publicalerts.cap">CapException</a> - if validate is true and there are parse-related
  or validation errors</dd>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFrom(org.xml.sax.InputSource, com.google.publicalerts.cap.Reasons.Builder)">
@@ -432,17 +432,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseFrom</h4>
-<pre>public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(org.xml.sax.InputSource&nbsp;is,
+public final&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFrom(org.xml.sax.InputSource&nbsp;is,
               <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
                       throws <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                             org.xml.sax.SAXParseException</pre>
+                             org.xml.sax.SAXParseException
 <div class="block">Parse the given alert.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>is</code> - the input source to read the CAP XML to parse</dd><dd><code>reasons</code> - a collection to which to add any non-fatal errors,
+<dl><dt><span class="strong">Parameters:</span></dt><dd>is - the input source to read the CAP XML to parse</dd><dd>reasons - a collection to which to add any non-fatal errors,
  warnings or recommendations during parsing</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the parsed alert</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code> - if the XML is not CAP XML</dd>
-<dd><code>org.xml.sax.SAXParseException</code> - on XML parsing error</dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a> - if the XML is not CAP XML</dd>
+<dd>org.xml.sax.SAXParseException - on XML parsing error</dd></dl>
 </li>
 </ul>
 <a name="parseFromInternal(com.google.publicalerts.cap.CachedSaxInputSource, com.google.publicalerts.cap.Reasons.Builder)">
@@ -451,13 +451,13 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>parseFromInternal</h4>
-<pre>protected&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFromInternal(<a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html" title="class in com.google.publicalerts.cap">CachedSaxInputSource</a>&nbsp;is,
+protected&nbsp;<a href="../../../../com/google/publicalerts/cap/Alert.html" title="class in com.google.publicalerts.cap">Alert</a>&nbsp;parseFromInternal(<a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html" title="class in com.google.publicalerts.cap">CachedSaxInputSource</a>&nbsp;is,
                       <a href="../../../../com/google/publicalerts/cap/Reasons.Builder.html" title="class in com.google.publicalerts.cap">Reasons.Builder</a>&nbsp;reasons)
                            throws <a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a>,
-                                  org.xml.sax.SAXParseException</pre>
+                                  org.xml.sax.SAXParseException
 <dl><dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></code></dd>
-<dd><code>org.xml.sax.SAXParseException</code></dd></dl>
+<dd><a href="../../../../com/google/publicalerts/cap/NotCapException.html" title="class in com.google.publicalerts.cap">NotCapException</a></dd>
+<dd>org.xml.sax.SAXParseException</dd></dl>
 </li>
 </ul>
 </li>

@@ -100,10 +100,10 @@
 </dl>
 <hr>
 <br>
-<pre>public class <span class="strong">MockTrustStrategy</span>
+public class <span class="strong">MockTrustStrategy</span>
 extends java.lang.Object
-implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></pre>
-<div class="block">A testing implementation of <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap"><code>TrustStrategy</code></a> that defaults to skipping
+implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a>
+<div class="block">A testing implementation of <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a> that defaults to skipping
  all validation.</div>
 </li>
 </ul>
@@ -123,7 +123,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#MockTrustStrategy()">MockTrustStrategy</a></strong>()</code>&nbsp;</td>
+<td class="colOne"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#MockTrustStrategy()">MockTrustStrategy</a></strong>()&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -141,45 +141,45 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#addTrustedKey(java.security.PublicKey)">addTrustedKey</a></strong>(java.security.PublicKey&nbsp;trustedKey)</code>&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#addTrustedKey(java.security.PublicKey)">addTrustedKey</a></strong>(java.security.PublicKey&nbsp;trustedKey)&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#allowMissingSignatures()">allowMissingSignatures</a></strong>()</code>
-<div class="block">Return <code>false</code> if valid digital signatures are always required.</div>
+<td class="colFirst">boolean</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#allowMissingSignatures()">allowMissingSignatures</a></strong>()
+<div class="block">Return false if valid digital signatures are always required.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#allowUntrustedCredentials()">allowUntrustedCredentials</a></strong>()</code>
-<div class="block">Return <code>false</code> if we must always have explicit trust in the
+<td class="colFirst">boolean</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#allowUntrustedCredentials()">allowUntrustedCredentials</a></strong>()
+<div class="block">Return false if we must always have explicit trust in the
  credentials used to validate a digital signature (as defined by
- <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)"><code>TrustStrategy.isKeyTrusted(java.security.PublicKey)</code></a>).</div>
+ <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">TrustStrategy.isKeyTrusted(java.security.PublicKey)</a>).</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#clearTrustedKeys()">clearTrustedKeys</a></strong>()</code>&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#clearTrustedKeys()">clearTrustedKeys</a></strong>()&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#isKeyTrusted(java.security.PublicKey)">isKeyTrusted</a></strong>(java.security.PublicKey&nbsp;key)</code>
-<div class="block">Return <code>true</code> if the given PublicKey should be trusted in the
+<td class="colFirst">boolean</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#isKeyTrusted(java.security.PublicKey)">isKeyTrusted</a></strong>(java.security.PublicKey&nbsp;key)
+<div class="block">Return true if the given PublicKey should be trusted in the
  context of validating the digital signatures of CAP alerts.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#removeTrustedKey(java.security.PublicKey)">removeTrustedKey</a></strong>(java.security.PublicKey&nbsp;untrustedKey)</code>&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#removeTrustedKey(java.security.PublicKey)">removeTrustedKey</a></strong>(java.security.PublicKey&nbsp;untrustedKey)&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#setAllowMissingSignatures(boolean)">setAllowMissingSignatures</a></strong>(boolean&nbsp;allowMissingSignatures)</code>&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#setAllowMissingSignatures(boolean)">setAllowMissingSignatures</a></strong>(boolean&nbsp;allowMissingSignatures)&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#setAllowUntrustedCredentials(boolean)">setAllowUntrustedCredentials</a></strong>(boolean&nbsp;allowUntrustedCredentials)</code>&nbsp;</td>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html#setAllowUntrustedCredentials(boolean)">setAllowUntrustedCredentials</a></strong>(boolean&nbsp;allowUntrustedCredentials)&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -187,7 +187,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -209,7 +209,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MockTrustStrategy</h4>
-<pre>public&nbsp;MockTrustStrategy()</pre>
+public&nbsp;MockTrustStrategy()
 </li>
 </ul>
 </li>
@@ -226,15 +226,15 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>allowMissingSignatures</h4>
-<pre>public&nbsp;boolean&nbsp;allowMissingSignatures()</pre>
-<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowMissingSignatures()">TrustStrategy</a></code></strong></div>
-<div class="block">Return <code>false</code> if valid digital signatures are always required.
- Return <code>true</code> if a missing digital signature or Public Key should
+public&nbsp;boolean&nbsp;allowMissingSignatures()
+<div class="block"><strong>Description copied from interface:&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowMissingSignatures()">TrustStrategy</a></strong></div>
+<div class="block">Return false if valid digital signatures are always required.
+ Return true if a missing digital signature or Public Key should
  be tolerated.  When both signature and Public Key are available, they will
  always be validated irrespective of this configuration setting.</div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
-<dd><code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowMissingSignatures()">allowMissingSignatures</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></code></dd>
+<dd><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowMissingSignatures()">allowMissingSignatures</a>&nbsp;in interface&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></dd>
 </dl>
 </li>
 </ul>
@@ -244,15 +244,15 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>allowUntrustedCredentials</h4>
-<pre>public&nbsp;boolean&nbsp;allowUntrustedCredentials()</pre>
-<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()">TrustStrategy</a></code></strong></div>
-<div class="block">Return <code>false</code> if we must always have explicit trust in the
+public&nbsp;boolean&nbsp;allowUntrustedCredentials()
+<div class="block"><strong>Description copied from interface:&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()">TrustStrategy</a></strong></div>
+<div class="block">Return false if we must always have explicit trust in the
  credentials used to validate a digital signature (as defined by
- <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)"><code>TrustStrategy.isKeyTrusted(java.security.PublicKey)</code></a>).
- Return <code>true</code> if untrusted credentials should be tolerated.</div>
+ <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">TrustStrategy.isKeyTrusted(java.security.PublicKey)</a>).
+ Return true if untrusted credentials should be tolerated.</div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
-<dd><code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()">allowUntrustedCredentials</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></code></dd>
+<dd><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()">allowUntrustedCredentials</a>&nbsp;in interface&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></dd>
 </dl>
 </li>
 </ul>
@@ -262,19 +262,19 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>isKeyTrusted</h4>
-<pre>public&nbsp;boolean&nbsp;isKeyTrusted(java.security.PublicKey&nbsp;key)</pre>
-<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">TrustStrategy</a></code></strong></div>
-<div class="block">Return <code>true</code> if the given PublicKey should be trusted in the
+public&nbsp;boolean&nbsp;isKeyTrusted(java.security.PublicKey&nbsp;key)
+<div class="block"><strong>Description copied from interface:&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">TrustStrategy</a></strong></div>
+<div class="block">Return true if the given PublicKey should be trusted in the
  context of validating the digital signatures of CAP alerts.
  Normally this would mean ensuring the PublicKey can be associated with an
  explicitly trusted 3rd party, e.g. via the use of X.509 certificates.
- Return <code>false</code> if the given PublicKey is not trusted.
+ Return false if the given PublicKey is not trusted.
 
  Note this method may be called irrespective of the return value of
- <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()"><code>TrustStrategy.allowUntrustedCredentials()</code></a></div>
+ <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#allowUntrustedCredentials()">TrustStrategy.allowUntrustedCredentials()</a></div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
-<dd><code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">isKeyTrusted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></code></dd>
+<dd><a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html#isKeyTrusted(java.security.PublicKey)">isKeyTrusted</a>&nbsp;in interface&nbsp;<a href="../../../../../com/google/publicalerts/cap/TrustStrategy.html" title="interface in com.google.publicalerts.cap">TrustStrategy</a></dd>
 </dl>
 </li>
 </ul>
@@ -284,7 +284,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>setAllowMissingSignatures</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;setAllowMissingSignatures(boolean&nbsp;allowMissingSignatures)</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;setAllowMissingSignatures(boolean&nbsp;allowMissingSignatures)
 </li>
 </ul>
 <a name="setAllowUntrustedCredentials(boolean)">
@@ -293,7 +293,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>setAllowUntrustedCredentials</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;setAllowUntrustedCredentials(boolean&nbsp;allowUntrustedCredentials)</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;setAllowUntrustedCredentials(boolean&nbsp;allowUntrustedCredentials)
 </li>
 </ul>
 <a name="addTrustedKey(java.security.PublicKey)">
@@ -302,7 +302,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>addTrustedKey</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;addTrustedKey(java.security.PublicKey&nbsp;trustedKey)</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;addTrustedKey(java.security.PublicKey&nbsp;trustedKey)
 </li>
 </ul>
 <a name="removeTrustedKey(java.security.PublicKey)">
@@ -311,7 +311,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>removeTrustedKey</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;removeTrustedKey(java.security.PublicKey&nbsp;untrustedKey)</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;removeTrustedKey(java.security.PublicKey&nbsp;untrustedKey)
 </li>
 </ul>
 <a name="clearTrustedKeys()">
@@ -320,7 +320,7 @@ implements <a href="../../../../../com/google/publicalerts/cap/TrustStrategy.htm
 <ul class="blockListLast">
 <li class="blockList">
 <h4>clearTrustedKeys</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;clearTrustedKeys()</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/testing/MockTrustStrategy.html" title="class in com.google.publicalerts.cap.testing">MockTrustStrategy</a>&nbsp;clearTrustedKeys()
 </li>
 </ul>
 </li>

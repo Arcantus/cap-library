@@ -96,8 +96,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">CapUtil</span>
-extends java.lang.Object</pre>
+public class <span class="strong">CapUtil</span>
+extends java.lang.Object
 <div class="block">Utilities for dealing with transforming to and from CAP protos.</div>
 </li>
 </ul>
@@ -118,85 +118,85 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static FieldDescriptor</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#findFieldByName(Builder,%20java.lang.String)">findFieldByName</a></strong>(Builder&nbsp;builder,
-               java.lang.String&nbsp;name)</code>
+<td class="colFirst">static FieldDescriptor</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#findFieldByName(Builder,%20java.lang.String)">findFieldByName</a></strong>(Builder&nbsp;builder,
+               java.lang.String&nbsp;name)
 <div class="block">Returns a field descriptor for the field of the given builder with the
  given CAP name.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#formatCapReference(java.lang.String,%20java.lang.String,%20java.util.Calendar)">formatCapReference</a></strong>(java.lang.String&nbsp;capSender,
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#formatCapReference(java.lang.String,%20java.lang.String,%20java.util.Calendar)">formatCapReference</a></strong>(java.lang.String&nbsp;capSender,
                   java.lang.String&nbsp;capIdentifier,
-                  java.util.Calendar&nbsp;sent)</code>
+                  java.util.Calendar&nbsp;sent)
 <div class="block">Returns a string legal for use in a CAP &lt;references&gt; parameter.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#formatCapReference(java.lang.String,%20java.lang.String,%20java.lang.String)">formatCapReference</a></strong>(java.lang.String&nbsp;capSender,
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#formatCapReference(java.lang.String,%20java.lang.String,%20java.lang.String)">formatCapReference</a></strong>(java.lang.String&nbsp;capSender,
                   java.lang.String&nbsp;capIdentifier,
-                  java.lang.String&nbsp;sent)</code>
+                  java.lang.String&nbsp;sent)
 <div class="block">Returns a string legal for use in a CAP &lt;references&gt; parameter.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getElementName(FieldDescriptor)">getElementName</a></strong>(FieldDescriptor&nbsp;fd)</code>
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getElementName(FieldDescriptor)">getElementName</a></strong>(FieldDescriptor&nbsp;fd)
 <div class="block">Returns the CAP element name given a proto FieldDescriptor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getEnumValue(EnumValueDescriptor)">getEnumValue</a></strong>(EnumValueDescriptor&nbsp;evd)</code>
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getEnumValue(EnumValueDescriptor)">getEnumValue</a></strong>(EnumValueDescriptor&nbsp;evd)
 <div class="block">Returns a CAP field value for an enum field.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getEnumValue(ProtocolMessageEnum)">getEnumValue</a></strong>(ProtocolMessageEnum&nbsp;e)</code>
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getEnumValue(ProtocolMessageEnum)">getEnumValue</a></strong>(ProtocolMessageEnum&nbsp;e)
 <div class="block">Returns a CAP field value for an enum field.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static java.util.Map&lt;java.lang.String,java.util.Set&lt;java.lang.String&gt;&gt;</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getRepeatedFieldNames()">getRepeatedFieldNames</a></strong>()</code>
+<td class="colFirst">static java.util.Map&lt;java.lang.String,java.util.Set&lt;java.lang.String&gt;&gt;</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#getRepeatedFieldNames()">getRepeatedFieldNames</a></strong>()
 <div class="block">Returns a map of CAP fields to their child fields that may be repeated.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#isBased64(java.lang.String)">isBased64</a></strong>(java.lang.String&nbsp;s)</code>
-<div class="block">Returns <code>true</code> if the string represents base64-encoded content,
- <code>false</code> otherwise.</div>
+<td class="colFirst">static boolean</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#isBased64(java.lang.String)">isBased64</a></strong>(java.lang.String&nbsp;s)
+<div class="block">Returns true if the string represents base64-encoded content,
+ false otherwise.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#isEmptyOrWhitespace(java.lang.String)">isEmptyOrWhitespace</a></strong>(java.lang.String&nbsp;s)</code>
-<div class="block">Returns true if the string is null or <code>s.trim()</code>
+<td class="colFirst">static boolean</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#isEmptyOrWhitespace(java.lang.String)">isEmptyOrWhitespace</a></strong>(java.lang.String&nbsp;s)
+<div class="block">Returns true if the string is null or s.trim()
  returns the empty string.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#parseReferenceIdentifier(java.lang.String,%20int)">parseReferenceIdentifier</a></strong>(java.lang.String&nbsp;s,
-                        int&nbsp;capVersion)</code>
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#parseReferenceIdentifier(java.lang.String,%20int)">parseReferenceIdentifier</a></strong>(java.lang.String&nbsp;s,
+                        int&nbsp;capVersion)
 <div class="block">Parses a CAP identifier from a single valid reference in
  &lt;references&gt;.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static java.util.Date</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#parseReferenceSent(java.lang.String)">parseReferenceSent</a></strong>(java.lang.String&nbsp;s)</code>
+<td class="colFirst">static java.util.Date</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#parseReferenceSent(java.lang.String)">parseReferenceSent</a></strong>(java.lang.String&nbsp;s)
 <div class="block">Parses the date specified in a single valid reference in
  &lt;references&gt;.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#stripXmlPreamble(java.lang.String)">stripXmlPreamble</a></strong>(java.lang.String&nbsp;xmlDocument)</code>
+<td class="colFirst">static java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CapUtil.html#stripXmlPreamble(java.lang.String)">stripXmlPreamble</a></strong>(java.lang.String&nbsp;xmlDocument)
 <div class="block">Strips the XML preamble, if any, from the start of the given string.</div>
 </td>
 </tr>
@@ -206,7 +206,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -228,13 +228,13 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getEnumValue</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;getEnumValue(EnumValueDescriptor&nbsp;evd)</pre>
+public static&nbsp;java.lang.String&nbsp;getEnumValue(EnumValueDescriptor&nbsp;evd)
 <div class="block">Returns a CAP field value for an enum field.
  <p/>
  Enum values in proto use C++ scoping rules, so 2 enums
  of the same message can't have the same name. We work around
  this limitation by using the name Value_EnumTypeName</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>evd</code> - the enum value descriptor</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>evd - the enum value descriptor</dd>
 <dt><span class="strong">Returns:</span></dt><dd>a CAP field name for the enum field.</dd></dl>
 </li>
 </ul>
@@ -244,13 +244,13 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getEnumValue</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;getEnumValue(ProtocolMessageEnum&nbsp;e)</pre>
+public static&nbsp;java.lang.String&nbsp;getEnumValue(ProtocolMessageEnum&nbsp;e)
 <div class="block">Returns a CAP field value for an enum field.
  <p/>
  Enum values in proto use C++ scoping rules, so 2 enums
  of the same message can't have the same name. We work around
  this limitation by using the name Value_EnumTypeName</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>e</code> - the enum value</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>e - the enum value</dd>
 <dt><span class="strong">Returns:</span></dt><dd>a CAP field name for the enum field.</dd></dl>
 </li>
 </ul>
@@ -260,11 +260,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getElementName</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;getElementName(FieldDescriptor&nbsp;fd)</pre>
+public static&nbsp;java.lang.String&nbsp;getElementName(FieldDescriptor&nbsp;fd)
 <div class="block">Returns the CAP element name given a proto FieldDescriptor.
  <p/>
  This method takes care of differences in casing between CAP and proto.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>fd</code> - the field descriptor for which the name is returned</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>fd - the field descriptor for which the name is returned</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the element name of the field</dd></dl>
 </li>
 </ul>
@@ -274,11 +274,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>findFieldByName</h4>
-<pre>public static&nbsp;FieldDescriptor&nbsp;findFieldByName(Builder&nbsp;builder,
-                              java.lang.String&nbsp;name)</pre>
+public static&nbsp;FieldDescriptor&nbsp;findFieldByName(Builder&nbsp;builder,
+                              java.lang.String&nbsp;name)
 <div class="block">Returns a field descriptor for the field of the given builder with the
  given CAP name. Takes care of differences in casing between CAP and proto.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>builder</code> - the builder to search in</dd><dd><code>name</code> - the CAP name to search for</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>builder - the builder to search in</dd><dd>name - the CAP name to search for</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the field, or null if it does not exist</dd></dl>
 </li>
 </ul>
@@ -288,12 +288,12 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getRepeatedFieldNames</h4>
-<pre>public static&nbsp;java.util.Map&lt;java.lang.String,java.util.Set&lt;java.lang.String&gt;&gt;&nbsp;getRepeatedFieldNames()</pre>
+public static&nbsp;java.util.Map&lt;java.lang.String,java.util.Set&lt;java.lang.String&gt;&gt;&nbsp;getRepeatedFieldNames()
 <div class="block">Returns a map of CAP fields to their child fields that may be repeated.
  <p>
  For instance, an "info" can have repeated "category" and "msgType" fields,
  so both of those fields (and others) will be included in the set returned
- by <code>getRepeatedFieldNames().get("info")</code>.</div>
+ by getRepeatedFieldNames().get("info").</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>a map of CAP fields to their child fields that may be repeated</dd></dl>
 </li>
 </ul>
@@ -303,10 +303,10 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEmptyOrWhitespace</h4>
-<pre>public static&nbsp;boolean&nbsp;isEmptyOrWhitespace(java.lang.String&nbsp;s)</pre>
-<div class="block">Returns true if the string is null or <code>s.trim()</code>
+public static&nbsp;boolean&nbsp;isEmptyOrWhitespace(java.lang.String&nbsp;s)
+<div class="block">Returns true if the string is null or s.trim()
  returns the empty string.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>s</code> - the string to check</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>s - the string to check</dd>
 <dt><span class="strong">Returns:</span></dt><dd>true if the string is empty or whitespace</dd></dl>
 </li>
 </ul>
@@ -316,12 +316,12 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isBased64</h4>
-<pre>public static&nbsp;boolean&nbsp;isBased64(java.lang.String&nbsp;s)</pre>
-<div class="block">Returns <code>true</code> if the string represents base64-encoded content,
- <code>false</code> otherwise.
+public static&nbsp;boolean&nbsp;isBased64(java.lang.String&nbsp;s)
+<div class="block">Returns true if the string represents base64-encoded content,
+ false otherwise.
  
- <p>The input string cannot be <code>null</code>, but can be empty. In this
- case, the function would return <code>true</code>.
+ <p>The input string cannot be null, but can be empty. In this
+ case, the function would return true.
  
  <p>The new-line character '\n' is stripped.</div>
 </li>
@@ -332,9 +332,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>formatCapReference</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;formatCapReference(java.lang.String&nbsp;capSender,
+public static&nbsp;java.lang.String&nbsp;formatCapReference(java.lang.String&nbsp;capSender,
                                   java.lang.String&nbsp;capIdentifier,
-                                  java.util.Calendar&nbsp;sent)</pre>
+                                  java.util.Calendar&nbsp;sent)
 <div class="block">Returns a string legal for use in a CAP &lt;references&gt; parameter.</div>
 </li>
 </ul>
@@ -344,9 +344,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>formatCapReference</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;formatCapReference(java.lang.String&nbsp;capSender,
+public static&nbsp;java.lang.String&nbsp;formatCapReference(java.lang.String&nbsp;capSender,
                                   java.lang.String&nbsp;capIdentifier,
-                                  java.lang.String&nbsp;sent)</pre>
+                                  java.lang.String&nbsp;sent)
 <div class="block">Returns a string legal for use in a CAP &lt;references&gt; parameter.</div>
 </li>
 </ul>
@@ -356,8 +356,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseReferenceIdentifier</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;parseReferenceIdentifier(java.lang.String&nbsp;s,
-                                        int&nbsp;capVersion)</pre>
+public static&nbsp;java.lang.String&nbsp;parseReferenceIdentifier(java.lang.String&nbsp;s,
+                                        int&nbsp;capVersion)
 <div class="block">Parses a CAP identifier from a single valid reference in
  &lt;references&gt;.
 
@@ -365,7 +365,7 @@ extends java.lang.Object</pre>
  being employed.
  
  <p>If the input string is not compliant with the XSD schema, and parsing it
- is not possible, <code>null</code> is returned.</div>
+ is not possible, null is returned.</div>
 </li>
 </ul>
 <a name="parseReferenceSent(java.lang.String)">
@@ -374,7 +374,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseReferenceSent</h4>
-<pre>public static&nbsp;java.util.Date&nbsp;parseReferenceSent(java.lang.String&nbsp;s)</pre>
+public static&nbsp;java.util.Date&nbsp;parseReferenceSent(java.lang.String&nbsp;s)
 <div class="block">Parses the date specified in a single valid reference in
  &lt;references&gt;.
  
@@ -382,7 +382,7 @@ extends java.lang.Object</pre>
  1.1 or greater.
 
  <p>If the input string is not compliant with the XSD schema, and parsing it
- is not possible, <code>null</code> is returned.</div>
+ is not possible, null is returned.</div>
 </li>
 </ul>
 <a name="stripXmlPreamble(java.lang.String)">
@@ -391,9 +391,9 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>stripXmlPreamble</h4>
-<pre>public static&nbsp;java.lang.String&nbsp;stripXmlPreamble(java.lang.String&nbsp;xmlDocument)</pre>
+public static&nbsp;java.lang.String&nbsp;stripXmlPreamble(java.lang.String&nbsp;xmlDocument)
 <div class="block">Strips the XML preamble, if any, from the start of the given string.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>xmlDocument</code> - document to check for &lt;?xml ..&gt; preamble.
+<dl><dt><span class="strong">Parameters:</span></dt><dd>xmlDocument - document to check for &lt;?xml ..&gt; preamble.
      If a preamble exists, this method expects it to start on the first
      character of the given xmlDocument.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the same String, minus any preamble.</dd></dl>

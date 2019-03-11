@@ -99,17 +99,17 @@ public class XmlSignatureValidator {
     /**
      * Determines whether the XML document contained a valid XML signature
      * signed by a trusted key as defined by {@link TrustStrategy#isKeyTrusted}
-     * - if so, return {@code true}.
+     * - if so, return { true}.
      *
      * <p>If the signature was valid but key was not trusted, return
-     * {@code true} iff {@link TrustStrategy#allowUntrustedCredentials} is
+     * { true} iff {@link TrustStrategy#allowUntrustedCredentials} is
      * true.
      *
      * <p>If the signature was missing or a suitable validation Key could not be
-     * found, return {@code true} iff
+     * found, return { true} iff
      * {@link TrustStrategy#allowMissingSignatures} is true.
      *
-     * <p>Otherwise, return {@code false}.
+     * <p>Otherwise, return { false}.
      */
     public boolean isSignatureValid() {
       return isSignatureValid;
@@ -117,9 +117,9 @@ public class XmlSignatureValidator {
 
     /**
      * Returns zero or more details to elaborate on the reason for validation
-     * failure (if {@link #isSignatureValid()} is {@code false}), or things we
+     * failure (if {@link #isSignatureValid()} is { false}), or things we
      * permitted because {@link TrustStrategy} allowed leniency
-     * (if {@link #isSignatureValid()} is {@code true}.
+     * (if {@link #isSignatureValid()} is { true}.
      */
     public Set<Detail> details() {
       return details;
@@ -335,7 +335,7 @@ public class XmlSignatureValidator {
     }
 
     /**
-     * Returns a SimpleKeySelectorResult cached in the given context, or {@code null} if none
+     * Returns a SimpleKeySelectorResult cached in the given context, or { null} if none
      */
     static SimpleKeySelectorResult getCachedResult(XMLCryptoContext context) {
       return (SimpleKeySelectorResult) context.get(PROPERTY_NAME);

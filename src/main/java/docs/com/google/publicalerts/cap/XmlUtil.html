@@ -96,9 +96,9 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">XmlUtil</span>
-extends java.lang.Object</pre>
-<div class="block">Utility methods working with <code>org.w3c.dom.Documents</code>.</div>
+public class <span class="strong">XmlUtil</span>
+extends java.lang.Object
+<div class="block">Utility methods working with org.w3c.dom.Documents.</div>
 </li>
 </ul>
 </div>
@@ -118,22 +118,22 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static javax.xml.parsers.DocumentBuilder</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#newDocumentBuilder()">newDocumentBuilder</a></strong>()</code>
-<div class="block">Returns a new <code>DocumentBuilder</code>.</div>
+<td class="colFirst">static javax.xml.parsers.DocumentBuilder</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#newDocumentBuilder()">newDocumentBuilder</a></strong>()
+<div class="block">Returns a new DocumentBuilder.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static org.w3c.dom.Document</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#parseDocument(org.xml.sax.InputSource)">parseDocument</a></strong>(org.xml.sax.InputSource&nbsp;is)</code>
-<div class="block">Parses the given <code>InputSource</code> into a <code>Document</code>.</div>
+<td class="colFirst">static org.w3c.dom.Document</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#parseDocument(org.xml.sax.InputSource)">parseDocument</a></strong>(org.xml.sax.InputSource&nbsp;is)
+<div class="block">Parses the given InputSource into a Document.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#writeDocument(org.w3c.dom.Document,%20java.io.Writer,%20java.lang.Integer)">writeDocument</a></strong>(org.w3c.dom.Document&nbsp;document,
+<td class="colFirst">static void</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlUtil.html#writeDocument(org.w3c.dom.Document,%20java.io.Writer,%20java.lang.Integer)">writeDocument</a></strong>(org.w3c.dom.Document&nbsp;document,
              java.io.Writer&nbsp;writer,
-             java.lang.Integer&nbsp;indent)</code>
+             java.lang.Integer&nbsp;indent)
 <div class="block">Writes the given document to the given writer.</div>
 </td>
 </tr>
@@ -143,7 +143,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -165,11 +165,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>newDocumentBuilder</h4>
-<pre>public static&nbsp;javax.xml.parsers.DocumentBuilder&nbsp;newDocumentBuilder()</pre>
-<div class="block">Returns a new <code>DocumentBuilder</code>.</div>
+public static&nbsp;javax.xml.parsers.DocumentBuilder&nbsp;newDocumentBuilder()
+<div class="block">Returns a new DocumentBuilder.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>a document builder</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - on ParserConfigurationError</dd></dl>
+<dd>java.lang.RuntimeException - on ParserConfigurationError</dd></dl>
 </li>
 </ul>
 <a name="parseDocument(org.xml.sax.InputSource)">
@@ -178,14 +178,14 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>parseDocument</h4>
-<pre>public static&nbsp;org.w3c.dom.Document&nbsp;parseDocument(org.xml.sax.InputSource&nbsp;is)
-                                          throws org.xml.sax.SAXParseException</pre>
-<div class="block">Parses the given <code>InputSource</code> into a <code>Document</code>.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>is</code> - the input to parse</dd>
+public static&nbsp;org.w3c.dom.Document&nbsp;parseDocument(org.xml.sax.InputSource&nbsp;is)
+                                          throws org.xml.sax.SAXParseException
+<div class="block">Parses the given InputSource into a Document.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>is - the input to parse</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the document</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>org.xml.sax.SAXParseException</code> - on parse exception</dd>
-<dd><code>java.lang.RuntimeException</code> - on IOException or non-parse-related SAXException</dd></dl>
+<dd>org.xml.sax.SAXParseException - on parse exception</dd>
+<dd>java.lang.RuntimeException - on IOException or non-parse-related SAXException</dd></dl>
 </li>
 </ul>
 <a name="writeDocument(org.w3c.dom.Document, java.io.Writer, java.lang.Integer)">
@@ -194,11 +194,11 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>writeDocument</h4>
-<pre>public static&nbsp;void&nbsp;writeDocument(org.w3c.dom.Document&nbsp;document,
+public static&nbsp;void&nbsp;writeDocument(org.w3c.dom.Document&nbsp;document,
                  java.io.Writer&nbsp;writer,
-                 java.lang.Integer&nbsp;indent)</pre>
+                 java.lang.Integer&nbsp;indent)
 <div class="block">Writes the given document to the given writer.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>document</code> - the document to write</dd><dd><code>writer</code> - receives the written document</dd><dd><code>indent</code> - number of spaces to indent, null means don't indent</dd></dl>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>document - the document to write</dd><dd>writer - receives the written document</dd><dd>indent - number of spaces to indent, null means don't indent</dd></dl>
 </li>
 </ul>
 </li>

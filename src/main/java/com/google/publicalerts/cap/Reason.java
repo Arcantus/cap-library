@@ -46,7 +46,7 @@ public class Reason {
     INFO, RECOMMENDATION, WARNING, ERROR;
     
     /**
-     * @return the levels higher than {@code this}, in order of ascending severity
+     * @return the levels higher than { this}, in order of ascending severity
      */
     public List<Level> getHigherLevels() {
       return ImmutableList.copyOf(Arrays.copyOfRange(values(), ordinal() + 1, values().length));
@@ -61,6 +61,7 @@ public class Reason {
   public static interface Type {
     
     /**
+     * @param locale the desired locale.
      * @return the localized message for this type (currently, English-only)
      */
     String getMessage(Locale locale);
@@ -96,7 +97,7 @@ public class Reason {
    * Builds a {@link Reason} object.
    * 
    * @param xPath the fully-predicated XPath expression to what the reason refers to
-   * (e.g., <pre>/alert[1]/info[1]</pre>)
+   * (e.g., /alert[1]/info[1])
    * @param type the type of the reason
    * @param messageParams message parameters for the reason
    */
@@ -107,16 +108,18 @@ public class Reason {
   }
 
   /**
-   * Builds a copy of this {@link Reason}, with the XPath prefixed with {@code xPathPrefix}.
+   * Builds a copy of this {@link Reason}, with the XPath prefixed with { xPathPrefix}.
    * 
-   * <p>For instance, if the this reason has XPath <pre>/alert[1]</pre>, and {@code xPathPrefix}
-   * is <pre>/feed[1]/entry[1]</code>, the output reason will have XPath
-   * <pre>/feed[1]/entry[1]/alert[1]</pre>. The {@code xPathPrefix} is expected to be
+   * <p>For instance, if the this reason has XPath /alert[1], and { xPathPrefix}
+   * is /feed[1]/entry[1], the output reason will have XPath
+   * /feed[1]/entry[1]/alert[1]. The { xPathPrefix} is expected to be
    * fully-predicated.
    * 
    * <p>This method should be used when an XML file is validated recursively, and the diagnostic
    * information collected about an XML fragment needs to be changed so that it references the
    * fragment within the XML file.
+   * @param xPathPrefix path prefix.
+   * @return Reason
    */
   public Reason prefixWithXpath(String xPathPrefix) {
     checkNotNull(xPathPrefix);
@@ -152,7 +155,8 @@ public class Reason {
   }
 
   /**
-   * @return the {@code i}th message parameter, or {@code null} if {@code i} is out of bounds
+   * @param i integer code.
+   * @return the { i}th message parameter, or { null} if { i} is out of bounds
    */
   public Object getMessageParam(int i) {
     return (messageParams.length > i) ? messageParams[i] : null;

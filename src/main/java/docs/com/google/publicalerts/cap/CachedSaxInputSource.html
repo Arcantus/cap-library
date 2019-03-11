@@ -101,16 +101,16 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">CachedSaxInputSource</span>
-extends org.xml.sax.InputSource</pre>
-<div class="block">An implementation of <code>InputSource</code> that allows source content to be
+public class <span class="strong">CachedSaxInputSource</span>
+extends org.xml.sax.InputSource
+<div class="block">An implementation of InputSource that allows source content to be
  read multiple times.  This class completely consumes and closes all
  underlying data streams.
 
  <p>The driving motivation for this class is our need to read a document's
  CAP Alert XMLNS prior to actually parsing the document.
 
- <p>Call <a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html#reset()"><code>reset()</code></a> in-between uses.  There is no need to close the
+ <p>Call <a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html#reset()">reset()</a> in-between uses.  There is no need to close the
  encapsulated streams: since they are already cached, they will simply be
  garbage collected when they're no longer needed.</div>
 </li>
@@ -132,8 +132,8 @@ extends org.xml.sax.InputSource</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html#reset()">reset</a></strong>()</code>
+<td class="colFirst">void</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/CachedSaxInputSource.html#reset()">reset</a></strong>()
 <div class="block">Resets streams to their initial positions.</div>
 </td>
 </tr>
@@ -143,14 +143,14 @@ extends org.xml.sax.InputSource</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.xml.sax.InputSource</h3>
-<code>getByteStream, getCharacterStream, getEncoding, getPublicId, getSystemId, setByteStream, setCharacterStream, setEncoding, setPublicId, setSystemId</code></li>
+getByteStream, getCharacterStream, getEncoding, getPublicId, getSystemId, setByteStream, setCharacterStream, setEncoding, setPublicId, setSystemId</li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -172,11 +172,11 @@ extends org.xml.sax.InputSource</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reset</h4>
-<pre>public&nbsp;void&nbsp;reset()
-           throws java.io.IOException</pre>
+public&nbsp;void&nbsp;reset()
+           throws java.io.IOException
 <div class="block">Resets streams to their initial positions.</div>
 <dl><dt><span class="strong">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd></dl>
+<dd>java.io.IOException</dd></dl>
 </li>
 </ul>
 </li>

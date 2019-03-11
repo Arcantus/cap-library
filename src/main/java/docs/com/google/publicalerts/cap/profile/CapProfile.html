@@ -92,7 +92,7 @@
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="strong">CapProfile</span></pre>
+public interface <span class="strong">CapProfile</span>
 <div class="block">Specifies a set of extra constraints on the CAP format.
  
  <p>The constraints are usually country-specific.</div>
@@ -115,26 +115,26 @@
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getCode()">getCode</a></strong>()</code>
+<td class="colFirst">java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getCode()">getCode</a></strong>()
 <div class="block">Returns a code unique to the profile.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getDocumentationUrl()">getDocumentationUrl</a></strong>()</code>
+<td class="colFirst">java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getDocumentationUrl()">getDocumentationUrl</a></strong>()
 <div class="block">Returns the canonical URL of the official document describing the profile.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getName()">getName</a></strong>()</code>
+<td class="colFirst">java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#getName()">getName</a></strong>()
 <div class="block">Returns the name of the profile, suitable for display.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#validate(com.google.publicalerts.cap.AlertOrBuilder)">validate</a></strong>(<a href="../../../../../com/google/publicalerts/cap/AlertOrBuilder.html" title="interface in com.google.publicalerts.cap">AlertOrBuilder</a>&nbsp;alert)</code>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/profile/CapProfile.html#validate(com.google.publicalerts.cap.AlertOrBuilder)">validate</a></strong>(<a href="../../../../../com/google/publicalerts/cap/AlertOrBuilder.html" title="interface in com.google.publicalerts.cap">AlertOrBuilder</a>&nbsp;alert)
 <div class="block">Checks the given alert against the profile and returns a collection of:
  
  errors explaining how the alert does not match the profile,
@@ -162,7 +162,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>java.lang.String&nbsp;getName()</pre>
+java.lang.String&nbsp;getName()
 <div class="block">Returns the name of the profile, suitable for display.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>the name of the profile</dd></dl>
 </li>
@@ -173,7 +173,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>getCode</h4>
-<pre>java.lang.String&nbsp;getCode()</pre>
+java.lang.String&nbsp;getCode()
 <div class="block">Returns a code unique to the profile.  Ideally, it will include a version number.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>a unique code identifying the profile</dd></dl>
 </li>
@@ -184,7 +184,7 @@
 <ul class="blockList">
 <li class="blockList">
 <h4>getDocumentationUrl</h4>
-<pre>java.lang.String&nbsp;getDocumentationUrl()</pre>
+java.lang.String&nbsp;getDocumentationUrl()
 <div class="block">Returns the canonical URL of the official document describing the profile.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>the documentation url</dd></dl>
 </li>
@@ -195,7 +195,7 @@
 <ul class="blockListLast">
 <li class="blockList">
 <h4>validate</h4>
-<pre><a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a>&nbsp;validate(<a href="../../../../../com/google/publicalerts/cap/AlertOrBuilder.html" title="interface in com.google.publicalerts.cap">AlertOrBuilder</a>&nbsp;alert)</pre>
+<a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a>&nbsp;validate(<a href="../../../../../com/google/publicalerts/cap/AlertOrBuilder.html" title="interface in com.google.publicalerts.cap">AlertOrBuilder</a>&nbsp;alert)
 <div class="block">Checks the given alert against the profile and returns a collection of:
  <ul>
  <li>errors explaining how the alert does not match the profile,
@@ -208,7 +208,7 @@
  <p>An alert not adhering to the recommendations and best-practices would still be accepted by
  whatever system that claims to require alerts adhering to the profile, but adopting the
  recommendations allows for more full compatibility and perhaps extra features.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>alert</code> - the alert to validate</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>alert - the alert to validate</dd>
 <dt><span class="strong">Returns:</span></dt><dd>errors and recommendations found during the validation, an empty collection if there
  are none</dd></dl>
 </li>

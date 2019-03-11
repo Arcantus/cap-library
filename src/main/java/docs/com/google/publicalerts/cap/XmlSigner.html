@@ -96,8 +96,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">XmlSigner</span>
-extends java.lang.Object</pre>
+public class <span class="strong">XmlSigner</span>
+extends java.lang.Object
 <div class="block">Uses the java XML Digital Signature API to generate an enveloped XML
  signature. Based on sample code at
  <a href="http://download.oracle.com/javase/6/docs/technotes/guides/security/xmldsig/XMLDigitalSignature.html">
@@ -121,44 +121,44 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceFromKeyPair(java.security.KeyPair)">newInstanceFromKeyPair</a></strong>(java.security.KeyPair&nbsp;keyPair)</code>
-<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap"><code>XmlSigner</code></a> using the given public/private
- <code>KeyPair</code>.</div>
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceFromKeyPair(java.security.KeyPair)">newInstanceFromKeyPair</a></strong>(java.security.KeyPair&nbsp;keyPair)
+<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a> using the given public/private
+ KeyPair.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceFromKeyStore(java.io.File,%20java.lang.String,%20java.lang.String)">newInstanceFromKeyStore</a></strong>(java.io.File&nbsp;file,
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceFromKeyStore(java.io.File,%20java.lang.String,%20java.lang.String)">newInstanceFromKeyStore</a></strong>(java.io.File&nbsp;file,
                        java.lang.String&nbsp;password,
-                       java.lang.String&nbsp;certificatAlias)</code>
-<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap"><code>XmlSigner</code></a> by loading a keystore at the given
+                       java.lang.String&nbsp;certificatAlias)
+<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a> by loading a keystore at the given
  location.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceWithRandomKeyPair()">newInstanceWithRandomKeyPair</a></strong>()</code>
+<td class="colFirst">static <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a></td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#newInstanceWithRandomKeyPair()">newInstanceWithRandomKeyPair</a></strong>()
 <div class="block">Most useful for testing.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(org.xml.sax.InputSource,%20java.io.Writer)">sign</a></strong>(org.xml.sax.InputSource&nbsp;is,
-    java.io.Writer&nbsp;writer)</code>
+<td class="colFirst">void</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(org.xml.sax.InputSource,%20java.io.Writer)">sign</a></strong>(org.xml.sax.InputSource&nbsp;is,
+    java.io.Writer&nbsp;writer)
 <div class="block">Signs the given XML document, writing the output to the given writer.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(java.io.Reader,%20java.io.Writer)">sign</a></strong>(java.io.Reader&nbsp;reader,
-    java.io.Writer&nbsp;writer)</code>
+<td class="colFirst">void</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(java.io.Reader,%20java.io.Writer)">sign</a></strong>(java.io.Reader&nbsp;reader,
+    java.io.Writer&nbsp;writer)
 <div class="block">Signs the given XML document, writing the output to the given writer.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(java.lang.String)">sign</a></strong>(java.lang.String&nbsp;str)</code>
+<td class="colFirst">java.lang.String</td>
+<td class="colLast"><strong><a href="../../../../com/google/publicalerts/cap/XmlSigner.html#sign(java.lang.String)">sign</a></strong>(java.lang.String&nbsp;str)
 <div class="block">Signs the given XML document, provided as a string.</div>
 </td>
 </tr>
@@ -168,7 +168,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -190,10 +190,10 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstanceFromKeyPair</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceFromKeyPair(java.security.KeyPair&nbsp;keyPair)</pre>
-<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap"><code>XmlSigner</code></a> using the given public/private
- <code>KeyPair</code>.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>keyPair</code> - the keys for the signer</dd>
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceFromKeyPair(java.security.KeyPair&nbsp;keyPair)
+<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a> using the given public/private
+ KeyPair.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>keyPair - the keys for the signer</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the signer</dd></dl>
 </li>
 </ul>
@@ -203,16 +203,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstanceFromKeyStore</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceFromKeyStore(java.io.File&nbsp;file,
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceFromKeyStore(java.io.File&nbsp;file,
                                 java.lang.String&nbsp;password,
                                 java.lang.String&nbsp;certificatAlias)
-                                         throws java.io.IOException</pre>
-<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap"><code>XmlSigner</code></a> by loading a keystore at the given
+                                         throws java.io.IOException
+<div class="block">Creates a new <a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a> by loading a keystore at the given
  location.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>file</code> - the location of the JKS keystore file</dd><dd><code>password</code> - the password to access the keystore</dd><dd><code>certificatAlias</code> - the alias of the keys</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>file - the location of the JKS keystore file</dd><dd>password - the password to access the keystore</dd><dd>certificatAlias - the alias of the keys</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the signer</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - on error loading the keys</dd></dl>
+<dd>java.io.IOException - on error loading the keys</dd></dl>
 </li>
 </ul>
 <a name="newInstanceWithRandomKeyPair()">
@@ -221,7 +221,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>newInstanceWithRandomKeyPair</h4>
-<pre>public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceWithRandomKeyPair()</pre>
+public static&nbsp;<a href="../../../../com/google/publicalerts/cap/XmlSigner.html" title="class in com.google.publicalerts.cap">XmlSigner</a>&nbsp;newInstanceWithRandomKeyPair()
 <div class="block">Most useful for testing.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>a new signer with a randomly generated DSA key pair</dd></dl>
 </li>
@@ -232,13 +232,13 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>sign</h4>
-<pre>public&nbsp;java.lang.String&nbsp;sign(java.lang.String&nbsp;str)
-                      throws org.xml.sax.SAXParseException</pre>
+public&nbsp;java.lang.String&nbsp;sign(java.lang.String&nbsp;str)
+                      throws org.xml.sax.SAXParseException
 <div class="block">Signs the given XML document, provided as a string.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>str</code> - the XML document to sign, as a string</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>str - the XML document to sign, as a string</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the signed XML document, again as a string</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>org.xml.sax.SAXParseException</code> - on error parsing the document</dd></dl>
+<dd>org.xml.sax.SAXParseException - on error parsing the document</dd></dl>
 </li>
 </ul>
 <a name="sign(java.io.Reader, java.io.Writer)">
@@ -247,15 +247,15 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>sign</h4>
-<pre>public&nbsp;void&nbsp;sign(java.io.Reader&nbsp;reader,
+public&nbsp;void&nbsp;sign(java.io.Reader&nbsp;reader,
         java.io.Writer&nbsp;writer)
           throws org.xml.sax.SAXParseException,
-                 java.io.IOException</pre>
+                 java.io.IOException
 <div class="block">Signs the given XML document, writing the output to the given writer.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the XML document to sign</dd><dd><code>writer</code> - to write the signed XML output</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>reader - the XML document to sign</dd><dd>writer - to write the signed XML output</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>org.xml.sax.SAXParseException</code> - on error parsing the document</dd>
-<dd><code>java.io.IOException</code> - on error writing to writer</dd></dl>
+<dd>org.xml.sax.SAXParseException - on error parsing the document</dd>
+<dd>java.io.IOException - on error writing to writer</dd></dl>
 </li>
 </ul>
 <a name="sign(org.xml.sax.InputSource, java.io.Writer)">
@@ -264,15 +264,15 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sign</h4>
-<pre>public&nbsp;void&nbsp;sign(org.xml.sax.InputSource&nbsp;is,
+public&nbsp;void&nbsp;sign(org.xml.sax.InputSource&nbsp;is,
         java.io.Writer&nbsp;writer)
           throws org.xml.sax.SAXParseException,
-                 java.io.IOException</pre>
+                 java.io.IOException
 <div class="block">Signs the given XML document, writing the output to the given writer.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>is</code> - the XML document to sign</dd><dd><code>writer</code> - to write the signed XML output</dd>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>is - the XML document to sign</dd><dd>writer - to write the signed XML output</dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code>org.xml.sax.SAXParseException</code> - on error parsing the document</dd>
-<dd><code>java.io.IOException</code> - on error writing to writer</dd></dl>
+<dd>org.xml.sax.SAXParseException - on error parsing the document</dd>
+<dd>java.io.IOException - on error writing to writer</dd></dl>
 </li>
 </ul>
 </li>

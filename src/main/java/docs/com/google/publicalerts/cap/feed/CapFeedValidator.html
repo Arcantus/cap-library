@@ -96,10 +96,10 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">CapFeedValidator</span>
-extends java.lang.Object</pre>
+public class <span class="strong">CapFeedValidator</span>
+extends java.lang.Object
 <div class="block">Validates portions of Atom/RSS feeds (fat or thin) of CAP alerts
- beyond what is done in by the schemas in <a href="../../../../../com/google/publicalerts/cap/feed/CapFeedParser.html" title="class in com.google.publicalerts.cap.feed"><code>CapFeedParser</code></a>.</div>
+ beyond what is done in by the schemas in <a href="../../../../../com/google/publicalerts/cap/feed/CapFeedParser.html" title="class in com.google.publicalerts.cap.feed">CapFeedParser</a>.</div>
 </li>
 </ul>
 </div>
@@ -118,7 +118,7 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../../com/google/publicalerts/cap/feed/CapFeedValidator.html#CapFeedValidator()">CapFeedValidator</a></strong>()</code>&nbsp;</td>
+<td class="colOne"><strong><a href="../../../../../com/google/publicalerts/cap/feed/CapFeedValidator.html#CapFeedValidator()">CapFeedValidator</a></strong>()&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -136,8 +136,8 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/publicalerts/cap/feed/CapFeedValidator.html#validate(SyndFeed)">validate</a></strong>(SyndFeed&nbsp;feed)</code>
+<td class="colFirst"><a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a></td>
+<td class="colLast"><strong><a href="../../../../../com/google/publicalerts/cap/feed/CapFeedValidator.html#validate(SyndFeed)">validate</a></strong>(SyndFeed&nbsp;feed)
 <div class="block">Validates a feed.</div>
 </td>
 </tr>
@@ -147,7 +147,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</li>
 </ul>
 </li>
 </ul>
@@ -169,7 +169,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CapFeedValidator</h4>
-<pre>public&nbsp;CapFeedValidator()</pre>
+public&nbsp;CapFeedValidator()
 </li>
 </ul>
 </li>
@@ -186,11 +186,11 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>validate</h4>
-<pre>public&nbsp;<a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a>&nbsp;validate(SyndFeed&nbsp;feed)</pre>
+public&nbsp;<a href="../../../../../com/google/publicalerts/cap/Reasons.html" title="class in com.google.publicalerts.cap">Reasons</a>&nbsp;validate(SyndFeed&nbsp;feed)
 <div class="block">Validates a feed.
  
- <p>Assumes that the given feed has a non-null <code>originalWireFeed()</code>.</div>
-<dl><dt><span class="strong">Parameters:</span></dt><dd><code>feed</code> - The parsed feed to validate.</dd>
+ <p>Assumes that the given feed has a non-null originalWireFeed().</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd>feed - The parsed feed to validate.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>A collection of reasons storing errors, warnings or
  recommendations.</dd></dl>
 </li>

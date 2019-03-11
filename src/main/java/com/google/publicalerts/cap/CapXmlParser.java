@@ -88,8 +88,7 @@ public class CapXmlParser {
 
   /**
    * Creates a new parser.
-   *
-   * @param validate if true, the {@code parseFrom} methods throw a
+   * @param validate if true, the { parseFrom} methods throw a
    * {@link CapException} if given invalid CAP XML. If false, no
    * {@link CapException} will be thrown, though a {@link SAXParseException}
    * or {@link NotCapException} could still be thrown if the XML is not
@@ -103,7 +102,7 @@ public class CapXmlParser {
   /**
    * Creates a new parser.
    *
-   * @param validate if true, the {@code parseFrom} methods throw a
+   * @param validate if true, the { parseFrom} methods throw a
    * {@link CapException} if given invalid CAP XML. If false, no
    * {@link CapException} will be thrown, though a {@link SAXParseException}
    * or {@link NotCapException} could still be thrown if the XML is not
@@ -277,6 +276,7 @@ public class CapXmlParser {
    * warnings or recommendations during parsing
    * @throws NotCapException if the XML is not CAP XML
    * @throws SAXParseException on XML parsing error
+   * @return Alert
    */
   public final Alert parseFrom(Reader reader, Reasons.Builder reasons)
       throws NotCapException, SAXParseException {

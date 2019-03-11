@@ -55,6 +55,8 @@ public final class Reasons implements Iterable<Reason> {
     
     /**
      * Adds a {@link Reason} object to the collection.
+     * @param reason reason
+     * @return Builder
      */
     public Builder add(Reason reason) {
       checkNotNull(reason);
@@ -65,6 +67,10 @@ public final class Reasons implements Iterable<Reason> {
     
     /**
      * Adds a {@link Reason} object to the collection.
+     * @param messageParams param
+     * @param type param
+     * @param xPath param
+     * @return Builder
      */
     public Builder add(String xPath, Type type, Object... messageParams) {
       return add(new Reason(xPath, type, messageParams));
@@ -93,6 +99,7 @@ public final class Reasons implements Iterable<Reason> {
 
   /**
    * Creates an object of type {@link Reasons.Builder}.
+   * @return Builder
    */
   public static Reasons.Builder newBuilder() {
     return new Reasons.Builder();
@@ -100,6 +107,8 @@ public final class Reasons implements Iterable<Reason> {
 
   /**
    * Creates a {@link Reasons} object with the content specified.
+   * @param reasons Reason to put in a Reasons collection class.
+   * @return Reasons collections.
    */
   public static Reasons of(Reason... reasons) {
     Reasons.Builder builder = Reasons.newBuilder();
@@ -121,9 +130,10 @@ public final class Reasons implements Iterable<Reason> {
   }
 
   /**
-   * Builds a copy of this {@link Reasons} object, with the XPath prefixed with {@code xPathPrefix}.
-   * 
+   * Builds a copy of this {@link Reasons} object, with the XPath prefixed with { xPathPrefix}.
    * @see Reason#prefixWithXpath(String)
+   * @param xPathPrefix path prefix.
+   * @return Reasons collection.
    */
   public Reasons prefixWithXpath(String xPathPrefix) {
     checkNotNull(xPathPrefix);
@@ -143,8 +153,9 @@ public final class Reasons implements Iterable<Reason> {
   }
 
   /**
-   * @return {@code true} if and only if the collection contains {@link Reason} objects with the
+   * @return { true} if and only if the collection contains {@link Reason} objects with the
    * level specified
+   * @param level - Level if contains.
    */
   public boolean containsWithLevel(Level level) {
     checkNotNull(level);
@@ -152,7 +163,8 @@ public final class Reasons implements Iterable<Reason> {
   }
   
   /**
-   * @return {@code true} if and only if the collection contains {@link Reason} objects with the
+   * @param level Level
+   * @return { true} if and only if the collection contains {@link Reason} objects with the
    * level specified or higher
    */
   public boolean containsWithLevelOrHigher(Level level) {
@@ -161,6 +173,7 @@ public final class Reasons implements Iterable<Reason> {
   }
   
   /**
+   * @param level Level.
    * @return the {@link Reason} objects stored in the collection, with the level specified
    */
   public List<Reason> getWithLevel(Level level) {
@@ -169,6 +182,7 @@ public final class Reasons implements Iterable<Reason> {
   }
   
   /**
+   * @param level Level
    * @return the {@link Reason} objects stored in the collection, with the level specified or
    * higher
    */

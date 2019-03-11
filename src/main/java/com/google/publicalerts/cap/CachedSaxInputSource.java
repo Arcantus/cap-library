@@ -90,7 +90,10 @@ public class CachedSaxInputSource extends InputSource {
     setEncoding(originalSource.getEncoding());
   }
 
-  /** Resets streams to their initial positions. */
+  /**
+   * Resets streams to their initial positions.
+   * @throws IOException File read exception.
+   */
   public void reset() throws IOException {
     if (getCharacterStream() != null) {
       getCharacterStream().reset();

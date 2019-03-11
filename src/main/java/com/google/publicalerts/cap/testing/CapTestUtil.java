@@ -115,7 +115,7 @@ public class CapTestUtil {
   }
   
   /**
-   * Asserts that the {@code expected} matches {@code actual}, where equality
+   * Asserts that the { expected} matches { actual}, where equality
    * between {@link Reason} objects is guaranteed if two objects have same:
    * <ul>
    * <li>reason type,

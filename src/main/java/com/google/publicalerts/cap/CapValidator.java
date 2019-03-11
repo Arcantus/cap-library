@@ -77,12 +77,12 @@ public class CapValidator {
       "application", "audio", "image", "message", "model", "multipart", "text", "video");
   
   /**
-   * The fields of {@code <info>} that contain human-readable content, for which we want to verify
+   * The fields of { <info>} that contain human-readable content, for which we want to verify
    * language consistency (i.e., no two fields have the same exact content if they are defined in
-   * different {@code <info>} with different {@code <language>}).
+   * different { <info>} with different { <language>}).
    * 
-   * <p>Human-readable fields of {@code <info>} that are likely to contain the same content across
-   * different languages (e.g., {@code <senderName>}) are omitted from this set.
+   * <p>Human-readable fields of { <info>} that are likely to contain the same content across
+   * different languages (e.g., { <senderName>}) are omitted from this set.
    */
   private static final Set<FieldDescriptor> HUMAN_READABLE_CONTENT_INFO_FIELDS = ImmutableSet.of(
       Info.getDescriptor().findFieldByNumber(Info.DESCRIPTION_FIELD_NUMBER),
@@ -211,7 +211,7 @@ public class CapValidator {
   }
   
   /**
-   * Within this method, {@code language} refers to a  RFC 3066 primary-subtag, as we don't want to
+   * Within this method, { language} refers to a  RFC 3066 primary-subtag, as we don't want to
    * distinguish between languages with a large overlap (e.g., en-US and en-GB).
    */
   private Reasons validateHumanReadableContent(InfoOrBuilder info, String language, XPath xPath) {

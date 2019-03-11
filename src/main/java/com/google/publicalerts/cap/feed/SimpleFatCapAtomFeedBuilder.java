@@ -54,6 +54,11 @@ public class SimpleFatCapAtomFeedBuilder {
 
   /**
    * Constructs an Atom feed containing the given complete ("fat") CAP messages.
+   * @param feedTitle Feed Title.
+   * @param feedUri Feed URI link.
+   * @param feedPublishedDate Publhised date.
+   * @param capAlerts Alerts lists.
+   * @return String - the atom feed value
    */
   public String toAtomFeed(String feedTitle, String feedUri, Date feedPublishedDate,
       Collection<Alert> capAlerts) {

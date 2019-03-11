@@ -100,7 +100,7 @@ public class CsvFileIterator implements Iterator<CsvFileIterator.CsvRow> {
    * Given the offset of the beginning of a field, this returns the offset
    * of the character after end of the field.<p>
    * For example, with the
-   * string '<code>abc,"hey, you",12345</code>':<pre>
+   * string 'abc,"hey, you",12345':
    * Offset  Result  Field described
    * 0       3       abc
    * 1       3       bc
@@ -111,7 +111,7 @@ public class CsvFileIterator implements Iterator<CsvFileIterator.CsvRow> {
    * 15      20      12345
    * 20      20      (zero-length string)
    * 21      -1      (null)
-   * </pre>
+   *
    * @return -1 if the cell does not terminate before the end of the string
    */
   private int findCellEnd(CharSequence str, int offset) {
@@ -249,7 +249,7 @@ public class CsvFileIterator implements Iterator<CsvFileIterator.CsvRow> {
 
     /**
      * Returns the value of the given cells at the given index, or
-     * {@code defaultValue} if the index does not exist.
+     * { defaultValue} if the index does not exist.
      *
      * @param index the index to pull from the cells
      * @param defaultValue the default value if index does not exist in the cells

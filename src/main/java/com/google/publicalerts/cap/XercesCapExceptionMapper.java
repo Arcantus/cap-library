@@ -30,7 +30,7 @@ import java.util.regex.Pattern;
 
 /**
  * Attempts to map {@link Reason}s of type {@link ReasonType#OTHER} derived
- * from Xerces-generated {@code SAXParseException}s to reasons with more
+ * from Xerces-generated { SAXParseException}s to reasons with more
  * descriptive {@link ReasonType}s and error messages specific to CAP.
  *
  * <p>Implementation note: Translation is done by parsing the messages
@@ -75,11 +75,11 @@ public class XercesCapExceptionMapper {
 
   /**
    * Attempts to map {@link Reason}s of type {@link ReasonType#OTHER} derived
-   * from Xerces-generated {@code SAXParseException}s to reasons with more
+   * from Xerces-generated { SAXParseException}s to reasons with more
    * descriptive {@link ReasonType}s and error messages specific to CAP.
    *
    * <p>Each {@link Reason} is expected to have 3 message parameters;
-   * the first is the {@code SAXParseException} error message;
+   * the first is the { SAXParseException} error message;
    * the second is the localName of the element being parsed at the time of
    * the exception;
    * the third is any characters that had been parsed at the time of the

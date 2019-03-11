@@ -81,10 +81,12 @@ public class CapDateUtil {
 
   /**
    * Returns the timezone offset, in minutes, between the given
-   * {@code dateStr} and UTC.
-   * <p>For example, if {@code dateStr} is 2003-04-02T14:39:01+05:00, this
-   * method would return 300. If {@code dateStr} is 2003-04-02T14:39:01-01:29,
+   * { dateStr} and UTC.
+   * <p>For example, if { dateStr} is 2003-04-02T14:39:01+05:00, this
+   * method would return 300. If { dateStr} is 2003-04-02T14:39:01-01:29,
    * this method would return -89.
+   * @param dateStr Current date as string.
+   * @return int value for timezone.
    */
   public static int getTimezoneOffset(String dateStr) {
     Matcher matcher = DATE_PATTERN.matcher(dateStr);

@@ -81,8 +81,8 @@ public class AustralianProfile extends AbstractCapProfile {
   }
 
   /**
-   * @param strictXsdValidation if {@code true}, perform by-the-spec XSD schema validation, which
-   * does not check a number of properties specified elsewhere in the spec. If {@code false}
+   * @param strictXsdValidation if { true}, perform by-the-spec XSD schema validation, which
+   * does not check a number of properties specified elsewhere in the spec. If { false}
    * (the default), attempt to do extra validation to conform to the text of the spec.
    */
   public AustralianProfile(boolean strictXsdValidation) {
@@ -373,7 +373,7 @@ public class AustralianProfile extends AbstractCapProfile {
     // Errors
     VERSION_CODE_REQUIRED(
         ERROR,
-        "<code>{0}</code> required."),
+        "{0} required."),
     UPDATE_OR_CANCEL_MUST_REFERENCE(
         ERROR,
         "All related messages that have not yet expired MUST be referenced for \"Update\" and "
