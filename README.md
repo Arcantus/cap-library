@@ -1,4 +1,4 @@
-# Common Alerting Protocol Library [![Build Status](https://travis-ci.org/google/cap-library.svg?branch=master)](https://travis-ci.org/google/cap-library)
+# Common Alerting Protocol Library
 Copyright 2014 Google Inc.
 
 http://github.com/google/cap-library/
