@@ -21,7 +21,9 @@
     </licenses>
 
     <scm>
-        <url>https://svn.apache.org/viewvc/maven</url>
+        <connection>scm:git:git://github.com/Arcantus/cap-library.git</connection>
+        <developerConnection>scm:git:ssh://github.com/Arcantus/cap-library.git</developerConnection>
+        <url>http://github.com/Arcantus/cap-library/tree/master</url>
     </scm>
 
     <properties>
