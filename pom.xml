@@ -25,11 +25,22 @@
         <developerConnection>scm:git:ssh://github.com/Arcantus/cap-library.git</developerConnection>
         <url>http://github.com/Arcantus/cap-library/tree/master</url>
     </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <github.baseProject>https://github.com/google/cap-library</github.baseProject>
         <mavenProject.author>Luann Athayde</mavenProject.author>
         <mavenProject.date>2019-03-11</mavenProject.date>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
