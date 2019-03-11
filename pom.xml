@@ -8,7 +8,7 @@
     <version>0.0.11</version>
     <packaging>jar</packaging>
 
-    <name>cap-library</name>
+    <name>${project.groupId}:${project.artifactId}</name>
     <description>Google cap-library 2014</description>
     <url>https://github.com/google/cap-library</url>
 
