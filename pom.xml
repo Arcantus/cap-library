@@ -10,7 +10,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Google cap-library 2014</description>
-    <url>https://github.com/google/cap-library</url>
+    <url>http://github.com/Arcantus/cap-library</url>
 
     <licenses>
         <license>
@@ -27,7 +27,7 @@
     </scm>
 
     <properties>
-        <github>https://github.com/google/cap-library</github>
+        <github.baseProject>https://github.com/google/cap-library</github.baseProject>
         <mavenProject.author>Luann Athayde</mavenProject.author>
         <mavenProject.date>2019-03-11</mavenProject.date>
     </properties>
@@ -92,9 +92,9 @@
 
         <!-- https://mvnrepository.com/artifact/com.sun/syndication -->
         <!--<dependency>-->
-            <!--<groupId>com.sun</groupId>-->
-            <!--<artifactId>syndication</artifactId>-->
-            <!--<version>0.9.0</version>-->
+        <!--<groupId>com.sun</groupId>-->
+        <!--<artifactId>syndication</artifactId>-->
+        <!--<version>0.9.0</version>-->
         <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/rome/rome -->
         <dependency>
@@ -115,6 +115,46 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
