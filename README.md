@@ -5,6 +5,8 @@ http://github.com/google/cap-library/
 
 ===========
 
+Project migrated from Ant to Maven.
+
 The CAP Library is a collection of code and tools to work with public alerting
 messages in the [Common Alerting Protocol]
 (http://en.wikipedia.org/wiki/Common_Alerting_Protocol) format.
@@ -41,8 +43,8 @@ http://code.google.com/apis/protocolbuffers/ and http://code.google.com/apis/pro
 
 ## Development
 
-###Install ant
-You can download and install Apache Ant from http://ant.apache.org/.
+###Install Maven
+You can download and install Maven (mvn): https://maven.apache.org/
 
 ###Run all tests
 ```
@@ -51,13 +53,7 @@ You can download and install Apache Ant from http://ant.apache.org/.
 
 ###Compile the library into a jar
 ```
-» cd java
-» ant jar
-```
-
-###Compile and run the validator
-
-```
-» cd validator
-» APPENGINE_JAVA_SDK=/path/to/appengine-sdk ant runserver
+» mvn compile
+or
+» mvn install
 ```
